@@ -1,0 +1,95 @@
+/* Reset default styles and set box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+/* Container styles */
+.container {
+    padding: 10px;
+    height: 100vh; /* Set height to 100% of the viewport height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    background-color: #a4cbf3;
+}
+
+/* Heading styles */
+.heading {
+    font-size: 40px;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* Search box styles */
+.searchBox {
+    width: 40vw;
+    height: 40px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    border: 1px solid rgb(44, 77, 54);
+    border-radius: 20px;
+    padding: 0 8px;
+    margin-bottom: 20px; /* Add margin for spacing */
+    background-color: #a4cbf3;
+}
+
+.searchBox input {
+    width: 80%;
+    height: 100%;
+    border: 0;
+    outline: none;
+}
+
+.searchBtn {
+    width: 15px;
+}
+
+/* Card box styles */
+.cardBox {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Card styles */
+.card {
+    height: 440px; /* Add "px" to the height value */
+    width: 340px;
+    border: 1px solid rgb(44, 77, 54);
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    transition: bottom 0.3s ease; /* Add a smooth transition effect */
+}
+
+.card:hover {
+    bottom: 0; /* Change the value to adjust the hover effect */
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-author {
+    font-size: 14px;
+    color: #56bb85;
+}
+
+.card-image {
+    margin: 10px;
+    /* Adjust image styles if needed */
+}
+
+.desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
